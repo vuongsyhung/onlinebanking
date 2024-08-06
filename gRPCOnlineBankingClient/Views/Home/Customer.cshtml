@@ -1,0 +1,19 @@
+﻿@model gRPCOnlineBankingClient.Models.Customer;
+
+<h1>
+    Customer
+</h1>
+
+@Model.LastName
+@Model.FirstName
+
+<form asp-controller="Home" asp-action="Customer" method="post">
+    <div class="form-group">
+        <label>Search By CustomerId:</label>
+        <input class="form-control" name="CustomerId" />
+    </div>
+    
+    <div class="m-1">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
